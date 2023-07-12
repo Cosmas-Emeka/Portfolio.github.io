@@ -12,6 +12,7 @@
 
 :root {
     --bg-color: rgb(82, 25, 25);
+    --bg-hover: rgb(35, 13, 13);
     --pry-color: khaki;
 }
 
@@ -86,8 +87,8 @@ nav {
 .nav-links ul li img {
     display: none;
     color: var(--pry-color);
-    width: 35px;
-    height: 35px;
+    width: 27px;
+    height: 27px;
 }
 
 
@@ -101,6 +102,9 @@ nav {
 
 @media (max-width: 660px) {
     .nav-links ul li a {
+        border-radius: 50%;
+    }
+    .nav-links ul li a:hover {
         border: 1px solid var(--bg-color);
     }
     .nav-links ul li a p {
@@ -237,13 +241,3 @@ a span:nth-child(4) {
     }
 }
 */
-
-
-
-
-
-@media (max-width: 481px) {
-    * {
-        font-size: small;
-    }
-}

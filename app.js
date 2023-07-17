@@ -1,11 +1,10 @@
-var navLinks = document.getElementById("navLinks");
-var menuIcon = document.getElementsById("menuIcon");
+const list = document.querySelectorAll(".list");
 
-
-function showMenu() {
-    navLinks.style.left = "0%";
+function activeLink() {
+    list.forEach((item) =>
+    item.classList.remove("active"));
+    this.classList.add("active");
 }
 
-function hideMenu() {
-    navLinks.style.left = "-100%";
-}
+list.forEach((item) =>
+item.addEventListener("click", activeLink))

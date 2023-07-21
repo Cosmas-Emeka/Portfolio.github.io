@@ -94,9 +94,9 @@ nav {
     .navigation {
         position: fixed;
         bottom: 0.4rem;
-        left: 0.4rem;
-        right: 0.4rem;
-        width: 98%;
+        left: 3%;
+        right: 3%;
+        width: 94%;
         border-radius: 20px;
         height: 60px;
         background: var(--bg-hover);

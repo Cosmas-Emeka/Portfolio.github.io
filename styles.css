@@ -12,9 +12,15 @@
 
 :root {
     --bg-grad-color: linear-gradient(45deg, rgb(82, 25, 25), rgb(35, 13, 13));
-    --bg-color: rgb(82, 25, 25);
-    --bg-hover: rgb(35, 13, 13);
-    --pry-color: khaki;
+    --bg-color: rgb(16, 58, 26);
+    --bg-hover: rgb(47, 176, 64);
+    --pry-color2: rgb(235, 225, 136);
+    --pry-color: rgb(47, 176, 64);
+    --pry-grad-color: linear-gradient(
+        to bottom,
+        rgb(47, 176, 64) 70%,
+        rgb(235, 225, 136)
+    );
 }
 
 
@@ -36,17 +42,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 3;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     background: var(--bg-color);
 }
 
 
 .name {
-    color: var(--pry-color);
+    background-image: var(--pry-grad-color);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-size: 2rem;
     font-weight: 900;
     font-family: cursive;
+    text-fill-color: transparent;
 }
 
 
@@ -145,23 +157,22 @@ nav {
     }
     
     
-    .navigation ul li a .icon img {
-        width: 30px;
-        height: 30px;
+    .navigation ul li a .icon i {
+        color: #000;
+        font-size: 1.5rem;
     }
-    
-    
-    .navigation ul li.active a .icon img {
-        width: 45px;
-        height: 45px;
-        border: 2px solid var(--bg-color);
+
+    @media (max-width: 400px) {
+        .navigation ul li a .icon i {
+            font-size: 1.3rem;
+        }
     }
     
     
     .navigation ul li a .text {
         position: absolute;
-        color: var(--pry-color);
-        font-weight: 800;
+        color: #000;
+        font-weight: 900;
         font-size: 0.8rem;
         opacity: 0;
         transform: translateY(20px);
@@ -177,9 +188,9 @@ nav {
         position: absolute;
         display: block;
         width: 60px;
-        height: 80px;
+        height: 60px;
         background: transparent;
-        border-radius: 10px;
+        border-radius: 50%;
         border: 5px solid var(--bg-color);
         transform: translateY(-40px) scale(0);
     }

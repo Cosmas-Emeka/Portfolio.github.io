@@ -1,4 +1,5 @@
 const list = document.querySelectorAll(".list");
+const loader = document.getElementById("preloader");
 
 function activeLink() {
     list.forEach((item) =>
@@ -8,3 +9,9 @@ function activeLink() {
 
 list.forEach((item) =>
 item.addEventListener("click", activeLink));
+
+
+//
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})

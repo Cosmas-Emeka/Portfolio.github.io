@@ -38,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
     padding-left: 5%;
     padding-right: 5%;
     background: var(--bg-color);
@@ -66,7 +66,7 @@ nav {
     justify-content: space-evenly;
     gap: 0.8rem;
     list-style: none;
-    z-index: 3;
+    z-index: 1;
 }
 
 
@@ -207,7 +207,7 @@ nav {
    flex-direction: row-reverse;
    align-items: center;
    justify-content: center;
-   height: 800px;
+   height: 100vh;
    padding: 2rem 5% 2rem 5%;
    color: #fff;
 }
@@ -234,6 +234,19 @@ nav {
     height: 300px;
     width: 70%;
     min-width: 300px;
+}
+
+
+#preloader {
+    background: #0b171e url(./imgs/load.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    height: 150vh;
+    transform: translateY(-100px);
+    width: 100%;
+    position: fixed;
+    z-index: 4;
 }
 
 

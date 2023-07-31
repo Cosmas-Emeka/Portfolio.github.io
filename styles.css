@@ -254,23 +254,54 @@ nav {
 
 @media (max-width: 400px) {
     .home .photo {
-        width: 300px;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
     }
 }
 
 
 .home .photo img {
-    min-height: 70%;
-    height: 300px;
+    min-height: 200px;
+    height: 200px;
     width: 50%;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 
 .intro-text {
     font-variant: small-caps;
     font-style: oblique;
+    display: inline-block;
 }
+
+
+
+.intro-text h1 {
+    width: 130px;
+    border-right: 10px solid var(--pry-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(15),
+        cursor .4s step-end infinite alternate
+    ;
+}
+
+
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+        
+    }
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+}
+
 
 
 .intro-text h1, .intro-text h5 {
@@ -283,6 +314,7 @@ nav {
     text-fill-color: transparent;
     background-image: var(--pry-grad-color);
     background-size: 100%;
+    letter-spacing: 1px;
 }
 
 /*

@@ -11,6 +11,7 @@
 
 
 :root {
+    --bg-diff-color : #38703d;
     --bg-color: linear-gradient(
         245.59deg,
         #4d9559 0%,

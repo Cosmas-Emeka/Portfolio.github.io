@@ -11,7 +11,7 @@
 
 
 :root {
-    --bg-diff-color : #38703d;
+    --bg-diff-color : #2e5531;
     --bg-color: linear-gradient(
         245.59deg,
         #4d9559 0%,
@@ -216,7 +216,7 @@ nav {
 
 
 
-/* ------------------Home section */
+/* ------------------Home section------------------  */
 .home {
    display: flex;
    flex-direction: row-reverse;
@@ -325,7 +325,7 @@ nav {
 
 
 
-.intro-text h1.one::before {
+.intro-text h1.appearance::before {
     content: "";
     position: absolute;
     top: 0;
@@ -334,7 +334,30 @@ nav {
     height: 100%;
     background: var(--bg-diff-color);
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+}
+
+
+
+.intro-text h1.appearance.one::before {
+    animation-delay: .4s;
+}
+
+
+
+.intro-text h1.appearance.two::before {
+    animation-delay: .8s;
+}
+
+
+
+.intro-text h1.appearance.three::before {
+    animation-delay: 1.2s;
+}
+
+
+
+.intro-text h1.appearance.four::before {
+    animation-delay: 1.6s;
 }
 
 

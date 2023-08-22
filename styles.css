@@ -262,31 +262,30 @@ nav {
 
 
 
-@media (max-width: 940px) {
-
+@media (max-width: 500px) {
+    .home .photo {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        transition: 2s;
+    }
+    .home .photo img {
+        min-height: 130px;
+        height: 150px;
+        min-width: 200px;
+    }
 }
 
 
 
 
 .intro-text {
-    font-variant: small-caps;
     font-style: oblique;
     display: inline-block;
-    width: 50%;
+    width: 40%;
     gap: 110px;
 }
 
-
-
-@media (max-width: 500px) {
-    .home .photo {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-        transition: 2s;
-    }
-}
 
 
 
@@ -301,8 +300,9 @@ nav {
 
 .intro-text h1 {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 900;
+    font-variant: small-caps;
 
     /* Text Gradient */
     -webkit-background-clip: text;
@@ -370,20 +370,12 @@ nav {
 
 
 
-/*@keyframes cursor {
-    50% {
-        border-color: transparent; 
-    }
+.intro-text P {
+    font-size: 0.8rem;
 }
 
 
 
-@keyframes typing {
-    from { width: 0 }
-}
-
-
-*/
 .links {
     display: flex;
     flex-direction: row;

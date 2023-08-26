@@ -165,12 +165,12 @@ nav {
     
     .navigation ul li a .icon i {
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     @media (max-width: 400px) {
         .navigation ul li a .icon i {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     }
     
@@ -278,6 +278,29 @@ nav {
 
 
 
+@media (max-height: 600px) {
+    .home .photo {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        transition: 2s;
+    }
+    .home .photo img {
+        min-height: 70px;
+        height: 70px;
+        min-width: 100px;
+    }
+    .navigation {
+        height: 40px;
+        border-radius: 10px;
+    }
+    .navigation ul li a .icon i {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 
 .intro-text {
     font-style: oblique;
@@ -300,9 +323,10 @@ nav {
 
 .intro-text h1 {
     position: relative;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 900;
     font-variant: small-caps;
+
 
     /* Text Gradient */
     -webkit-background-clip: text;
@@ -372,6 +396,17 @@ nav {
 
 .intro-text P {
     font-size: 0.8rem;
+}
+
+
+
+@media (max-width: 481px) {
+    .intro-text h1 {
+        font-size: 1.2rem;
+    }
+    .intro-text p {
+        font-size: 0.7rem;
+    }
 }
 
 
